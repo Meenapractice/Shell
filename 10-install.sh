@@ -8,7 +8,7 @@ if [ $USERID -ne 0 ]; then
 fi
 
 echo "Installing nginx"
-dnf install nginxyy -y
+dnf install nginx -y
 
 if [ $? -ne 0 ]; then
    echo "Install nginx.....FAILURE"
