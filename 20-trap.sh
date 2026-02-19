@@ -12,7 +12,7 @@ B="\e[34m"
 N="\e[0m"
 
 if [ $USER_ID -ne 0 ]; then
-  echo "$R Please run the script with root access $N" | tee -a $LOGS_FILE
+  echo -e "$R Please run the script with root access $N" | tee -a $LOGS_FILE
   exit 1
 fi
 
@@ -23,6 +23,6 @@ do
    echo "$package not installed...Installing"
    dnf install $package -y &>>LOGS_FILE
   else
-    echo "$package already installed...$Y SKIPPING $N"
+    echo "-e $package already installed...$Y SKIPPING $N"
   fi
 done
