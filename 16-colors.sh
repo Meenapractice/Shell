@@ -6,4 +6,4 @@ Y="\e[33m"
 B="\e[34m"
 N="\e[0m"
 
-echo -e "$R Hello $Y World $N, $G I am $B Test User"
+echo -e "$R Hello $Y World $N, $G I am $B Test User $N"
